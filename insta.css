@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1px;
+    background:linear-gradient(70deg,  blue, rgb(119, 69, 194),  rgb(59, 170, 207) );
+}
+
+/* Phone Frame */
+.phone {
+    width: 300px;
+    height: 600px;
+    /* background:linear-gradient(70deg,  blue, rgb(119, 69, 194),  rgb(59, 170, 207) ); */
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* animation-duration: 10s ; */
+    animation-name: phone ;
+    animation: phone 10s infinite;
+}
+
+@keyframes phone {
+    10% { background: linear-gradient(70deg,  blue, rgb(119, 69, 194),  rgb(59, 170, 207));}
+    60% {background: linear-gradient(70deg, rgb(89, 205, 89), rgb(239, 235, 235), rgb(232, 103, 33));}
+    100%  {background: linear-gradient(70deg, rgb(212, 94, 114), rgb(223, 223, 102), rgb(210, 18, 18));}
+}
+
+/* Phone Screen */
+.screen {
+    width: 90%;
+    height: 85%;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    
+}
+
+/* Profile Container */
+.profile-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+/* Profile Picture with Instagram Gradient Border */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border:  linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 4px;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px -5px 10px red;
+    background-image: url("watermark.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid white; /* Inner white border */
+
+}
+
+/* User Info */
+.user-info h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.user-info .bio {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 16px;
+}
+
+/* Buttons */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+ .message-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100px;
+}
+
+
+.follow-btn {
+    background: #0095f6;
+    width: 100px;
+    color: white;
+    margin-right: 5px;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.follow-btn:hover {
+    background: #0077cc; /* Darker blue on hover */
+    color: #f0f0f0;
+}
+
+/* .follow-btn {
+    background: #0095f6;
+    color: white;
+    margin-right: 5px;
+}
+
+.follow-btn:hover{
+
+} */
+
+.message-btn {
+    background: #e4e4e4;
+    color: black;
+    margin-left: 5px;
+}
+
+
+
+/* Speaker */
+.speaker {
+    width: 60px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 3px;
+    position: absolute;
+    top: 15px;
+}
+
+/* Home Button */
+.home-button {
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    box-shadow: -5px -5px 10px black;
+}
